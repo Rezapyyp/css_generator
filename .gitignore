@@ -1,0 +1,17 @@
+
+node_modules/
+
+.vscode/
+
+jsconfig.json
+
+package-lock.json
+
+vite.config.js
+
+challenges/
+
+__pycache__/
+
+*.pyc
+

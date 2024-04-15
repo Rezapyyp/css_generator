@@ -1,0 +1,27 @@
+.color-pickle{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+#colorText{
+    width: 2rem;
+    text-align: center;
+    font-size: large;
+    width: 7ch ;
+}
+
+.box{
+    width: 25rem;
+    height: 30rem;
+    background-color: #ccc;
+    border: 7px solid black;
+    text-align: center;
+    padding: 20px;
+
+}
+.i-can{
+    color: blueviolet;
+}
+
+

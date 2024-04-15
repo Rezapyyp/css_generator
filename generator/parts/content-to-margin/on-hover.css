@@ -1,0 +1,55 @@
+/* .b-none{
+    outline: none !important;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: start;
+    margin-top: 2rem;
+    width: 90vw;
+    height: 90vh;
+    background-color: #d5e4e7;
+}
+
+.box{
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 6px;
+
+    width: 10vw;
+    height: 10vh;
+    background-color: brown ;
+}
+span{
+    font-size: large;
+    color: white;
+}
+
+/* *:hover{
+    outline: 3px solid hwb(120 2% 0%);
+    
+} */
+
+*[pip] *:hover{
+    position: relative;
+    border: 3px dashed rgb(255, 255, 255);
+    outline: 3px solid rgb(0, 0, 0);
+}
+
+/* *[pip] *::after{
+    content: "Hello";
+    
+    color: rgb(21, 255, 0);
+} */

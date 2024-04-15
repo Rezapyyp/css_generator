@@ -1,0 +1,137 @@
+:root{
+    --default_toolbar_height : 5vh ;
+}
+
+/* work space */
+.work-space{
+    background-color: aqua;
+    position: absolute;
+    inset: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+/* toolbar */
+#toolbar{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 70vw ;
+    width: 30vw;
+    height: var(--default_toolbar_height);
+    z-index: 2;
+    background-color: #fafafa;
+    border: 3px solid yellow;
+
+}
+
+#treeContent{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    right: 30vw;
+    left: 0p ;
+    width: 70vw;
+    height: var(--default_toolbar_height);
+    z-index: 2;
+    background-color: #fafafa;
+    border: 3px solid orange;
+}
+
+.triangleBox{
+    position: relative;
+    display: block;
+    height: var(--default_toolbar_height) ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.triangle{
+    position: absolute;
+    top: 1vh;
+    cursor: pointer;
+
+}
+
+.t-down{
+    border-left: 15vw solid transparent;
+    border-right: 15vw solid transparent;
+    border-top: 3vh solid black ;
+}
+
+.t-up{
+    border-left: 15vw solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 3vh solid black ;
+}
+
+.b-0{
+    height: 100vh !important;
+}
+
+
+
+#DOMbar{
+    display: flex;
+    height: var(--default_toolbar_height);
+    margin-top: 1ch ;
+    margin-bottom: 1ch ;
+
+}
+
+.DOM{
+    flex-grow: 1 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background-color: #fcdd55;
+    margin: 3px;
+    cursor: pointer;
+
+}
+
+#elementSettings{
+    width: 30vw ;
+    height: 100vh ;
+    margin: 1px auto;
+    /* background-color: blueviolet; */
+}
+
+#settings{
+    display: flex;
+    height: var(--default_toolbar_height);
+    margin-top: 1ch ;
+    margin-bottom: 1ch ;
+}
+
+#cssSettings{
+    flex-grow: 1 ;
+    background-color: #fafafa;
+    margin: 3px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-bottom: 2px solid black;
+}
+#htmlSettings{
+    flex-grow: 1 ;
+    background-color: #fafafa;
+    margin: 3px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+#settingsBody{
+    background-color: blueviolet;
+    width: 29vw ;
+    height: 100vh ;
+    margin:  auto;
+    overflow-y: scroll;
+}

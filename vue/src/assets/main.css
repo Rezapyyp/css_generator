@@ -28,7 +28,7 @@
 #treeBox{
 	position: relative;
     background-color: black;
-    width:100vw ; 
+    width:70vw ; 
     height:100vh ; 
     overflow : scroll;
 }

@@ -1,5 +1,5 @@
 <script>
-import axios from "axios"
+// import axios from "axios"
 import Folder from "./Folder.vue"
 
 export default {
@@ -11,57 +11,38 @@ export default {
         }
     },
     methods: {
-        showForm(){
-            this.showFormCreateFolder = ! this.showFormCreateFolder 
-        },
-        async send_data(){
-            const data = {name: this.$refs.inputValue.value,}
-            console.log(data);
-            await axios.post('http://127.0.0.1:8000/createFolder', data , {headers: {'content-type':'application/json' }})
-            .then(function (response) {
-                console.log(response);
-                console.log(response.status);
-                alert(response.data.f_msg)
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-            this.showFormCreateFolder = false
-        },
+        // showForm(){
+        //     this.showFormCreateFolder = ! this.showFormCreateFolder 
+        // },
+        // async send_data(){
+        //     const data = {name: this.$refs.inputValue.value,}
+        //     console.log(data);
+        //     await axios.post('http://127.0.0.1:8000/createFolder', data , {headers: {'content-type':'application/json' }})
+        //     .then(function (response) {
+        //         console.log(response);
+        //         console.log(response.status);
+        //         alert(response.data.f_msg)
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error.message);
+        //     });
+        //     this.showFormCreateFolder = false
+        // },
     }
 }
 </script>
 <template>
 
+<div id="explorerFolderBody">
 
-<div id="explorerFolderBody" >
-    <div id="CRUDexplorer">
-        <span @click="showForm()" id="createNewFolder">New Folder</span>
-    </div>
-    <div id="folders">
-        <div v-if="showFormCreateFolder" id="newFolderBox">
-            <div id="myForm" >
-                <input type="text" @keypress.enter="send_data()" ref="inputValue" placeholder="Folder name">
-            </div>
-        </div>
-        <div class="folder">
-            <div class="folder-head">
-                <span>FolderName</span>
-            </div>
-            <div v-show="showFile" class="folder-body files">
-                <div class="file">f1</div>
-                <div class="file">f2</div>
-                <div class="file">f3</div>
-            </div>
-        </div>
-    </div>
 </div>
+
 
 
 </template>
 <style scoped>
 #explorerFolderBody{
-    width: 100vw;
+    width: 20vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -136,6 +117,10 @@ export default {
 .folder-head{
     width: 100vw;
     height: 3rem;
+}
+.folder-head span{
+    display: block;
+    margin-top: 0.7rem;
 }
 
 .files{

@@ -27,7 +27,7 @@
 
 #treeBox{
 	position: relative;
-    background-color: black;
+    /* background-color: black; */
     width:70vw ; 
     height:100vh ; 
     overflow : scroll;
@@ -38,7 +38,8 @@
 	width: max-content;
 	height: max-content ;
     overflow: hidden;
-	background-color: black;
+	/* background-color: black; */
+
 }
 
 #treeDOM ul {

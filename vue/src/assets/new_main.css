@@ -1,0 +1,120 @@
+*{
+    /* Disable Text Selection */
+    -webkit-user-select: none ;
+    -ms-user-select: none ;
+    user-select: none ;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+.content_box{
+    display: flex;
+}
+#treeBox{
+    /* padding: 10rem; */
+    position: relative;
+    overflow : scroll;
+    background-color: aquamarine;
+    width: 25vw;
+
+}
+#treeDOM{
+    width: 25vw;
+    height: 100vh;
+    margin: 10rem ;
+    width: 100%;
+}
+
+
+#demo_section{
+    width: 50vw;
+    background-color: aqua;
+}
+
+
+#settings{
+    width: 25vw;
+    background-color: rgb(53, 230, 191);
+}
+
+
+#settings #go-to-settings{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+    width: 100%;
+    background-color: #e9e9e9;
+    height: 3rem;
+    color: #333;
+}
+
+#settings #go-to-settings div{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#settings #go-to-settings #go-to-css-settings{
+    grid-area: 1 / 1 / 2 / 2; 
+}
+#settings #go-to-settings #go-to-html-settings{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.node-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.b_b_2{
+    border-bottom: solid 2px #333;
+}

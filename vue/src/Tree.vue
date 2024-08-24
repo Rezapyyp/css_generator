@@ -1,9 +1,9 @@
 <script>
-import { isProxy, toRaw } from 'vue';
+// import { isProxy, toRaw } from 'vue';
 import TreeItem from './TreeItem.vue'
 
 
-const treeData = {
+let treeData = {
     tagName: 'html',
     block_element: true ,
     children: [
@@ -35,11 +35,20 @@ export default {
     data(){
             return {
                 treeData,
-                selected_model : "no model" ,
-
+                count : 0 ,
             }
         },
     methods :{
+        getSelectedModel(model){
+            console.log(model)
+        },
+        callback(model){
+            // obj_model = toRaw(model) 
+            // console.log(obj_model)
+            // console.log(toRaw(model))
+            console.log(model)
+            console.log("Fucked")
+        }
     }
 }
 
@@ -52,13 +61,12 @@ export default {
     <div id="treeBox" >
         <div id="treeDOM" >
             <ul>
-                <TreeItem class="item" @model_res="(model) => selected_model = model" :model="treeData"></TreeItem>
-                <!-- <TreeItem class="item" @model_res="model" :model="treeData"></TreeItem> -->
+                <TreeItem class="item" @selectedModel="callback" :model="treeData"></TreeItem>
             </ul>
         </div>
     </div>
 	<div class="settings">
-        selected_tag : {{ selected_model }}
+        selected_tag : {{count}}
     </div>
 	
 </template>
